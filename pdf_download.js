@@ -1,4 +1,5 @@
-  document.getElementById('HindiMadhyam-pdf').addEventListener('click', function () {
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('HindiMadhyam-pdf').addEventListener('click', function () {
         const divContents = document.getElementById('HindiMadhyam_Pdf').innerHTML;
         const printWindow = window.open('', '_blank');
         printWindow.document.open();
@@ -6,3 +7,4 @@
         printWindow.document.close();
         printWindow.print();
     });
+});
